@@ -2,135 +2,98 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Site en construction | Under construction | In costruzione</title>
-  <meta name="description" content="Site en construction — Under construction — Sito in costruzione" />
-  <meta name="robots" content="noindex,nofollow" />
-  <style>
-    :root{
-      --bg:#070707;
-      --text:#f2f2f2;
-      --muted:rgba(242,242,242,.72);
-      --muted2:rgba(242,242,242,.50);
-      --line:rgba(255,255,255,.10);
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:
-        radial-gradient(800px 500px at 50% 40%, rgba(255,255,255,.08), transparent 55%),
-        radial-gradient(900px 600px at 50% 120%, rgba(255,255,255,.05), transparent 60%),
-        var(--bg);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-    }
-    .wrap{
-      width:min(720px, 100%);
-      text-align:center;
-    }
-    .logo{
-      width:min(280px, 70vw);
-      height:auto;
-      display:block;
-      margin:0 auto 18px auto;
-      filter: drop-shadow(0 18px 35px rgba(0,0,0,.75));
-      opacity:.98;
-    }
-    .card{
-      margin: 0 auto;
-      padding: 22px 18px 18px;
-      border:1px solid var(--line);
-      border-radius:18px;
-      background: rgba(0,0,0,.30);
-      backdrop-filter: blur(6px);
-      box-shadow:
-        0 18px 60px rgba(0,0,0,.65),
-        inset 0 1px 0 rgba(255,255,255,.06);
-    }
-    .title{
-      font-size: clamp(18px, 2.3vw, 22px);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      margin: 4px 0 12px 0;
-      color: rgba(242,242,242,.92);
-    }
-    .lines{
-      display:grid;
-      gap:10px;
-      margin: 0;
-      padding: 0;
-      list-style:none;
-    }
-    .line{
-      display:flex;
-      align-items:baseline;
-      justify-content:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.03);
-    }
-    .lang{
-      font-size:12px;
-      letter-spacing:.14em;
-      text-transform:uppercase;
-      color: var(--muted2);
-      min-width: 42px;
-      text-align:right;
-    }
-    .msg{
-      font-size:16px;
-      color: var(--muted);
-      text-align:left;
-      max-width: 420px;
-    }
-    .footer{
-      margin-top:14px;
-      font-size:12px;
-      color: rgba(242,242,242,.40);
-      letter-spacing:.06em;
-    }
-    .dot{
-      display:inline-block;
-      width:6px;height:6px;border-radius:50%;
-      background: rgba(242,242,242,.55);
-      margin: 0 8px 2px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Swiss Smart Living — Installation & intégration Smart Home</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <main class="wrap">
-    <!-- Pune logo-ul în același folder cu index.html și numește-l logo.svg sau logo.png -->
-    <img class="logo" src="assets/img/logo.png" alt="Swiss Smart Living" />
+  <header class="wrap header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Swiss Smart Living" class="logo" />
+      <div class="brand-text">
+        <div class="name">Swiss Smart Living</div>
+        <div class="tag">Confort • Sécurité • Énergie</div>
+      </div>
+    </div>
 
-    <section class="card" aria-label="Site under construction">
-      <div class="title">Site under construction</div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact" class="btn">Devis</a>
+    </nav>
+  </header>
 
-      <ul class="lines">
-        <li class="line">
-          <span class="lang">FR</span>
-          <span class="msg">Site en construction — ouverture bientôt.</span>
-        </li>
-        <li class="line">
-          <span class="lang">EN</span>
-          <span class="msg">Website under construction — launching soon.</span>
-        </li>
-        <li class="line">
-          <span class="lang">IT</span>
-          <span class="msg">Sito in costruzione — in arrivo presto.</span>
-        </li>
-      </ul>
+  <main>
+    <section class="wrap hero">
+      <div class="hero-left">
+        <h1>Smart Home premium, installé proprement.</h1>
+        <p>Conception, installation électrique et intégration domotique sur mesure en Suisse romande.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Demander un devis</a>
+          <a class="btn ghost" href="tel:+41794127172">Appeler</a>
+        </div>
+        <div class="meta">Fribourg • Vaud • Valais</div>
+      </div>
+      <div class="hero-right">
+        <div class="card">
+          <div class="card-title">Interventions</div>
+          <ul>
+            <li>Éclairage intelligent (Hue, etc.)</li>
+            <li>Tableaux, prises, interrupteurs</li>
+            <li>Sécurité & accès</li>
+            <li>Optimisation énergie</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <div class="footer">
-        <span class="dot"></span> Swiss Smart Living <span class="dot"></span>
+    <section id="services" class="wrap section">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="box"><h3>Installation électrique</h3><p>Mise en conformité, extensions, rénovation, finitions nettes.</p></div>
+        <div class="box"><h3>Smart Home</h3><p>Scénarios, intégration, contrôle centralisé, évolutif.</p></div>
+        <div class="box"><h3>Sécurité</h3><p>Caméras, capteurs, accès, alertes, automatisations.</p></div>
+        <div class="box"><h3>Énergie</h3><p>Mesure, optimisation, automatisations pour réduire la conso.</p></div>
+      </div>
+    </section>
+
+    <section id="realisations" class="wrap section">
+      <h2>Réalisations</h2>
+      <p class="muted">Ajoute ici 6–12 photos (avant/après). On peut faire une galerie propre ensuite.</p>
+      <div class="gallery">
+        <div class="ph">Photo</div><div class="ph">Photo</div><div class="ph">Photo</div>
+        <div class="ph">Photo</div><div class="ph">Photo</div><div class="ph">Photo</div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap section">
+      <h2>Contact</h2>
+      <p class="muted">Réponse sous 24h ouvrées.</p>
+
+      <!-- Netlify form (fonctionne si déployé sur Netlify) -->
+      <form name="contact" method="POST" data-netlify="true" class="form">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="row">
+          <input name="name" placeholder="Nom" required />
+          <input name="phone" placeholder="Téléphone" />
+        </div>
+        <input name="email" type="email" placeholder="E-mail" required />
+        <textarea name="message" placeholder="Décris ton projet (lieu, délais, photos si besoin)..." required></textarea>
+        <button class="btn" type="submit">Envoyer</button>
+      </form>
+
+      <div class="contact-line">
+        <a href="tel:+41794127172">+41 79 412 71 72</a> ·
+        <a href="mailto:codrin@swisssmartliving.ch">codrin@swisssmartliving.ch</a>
       </div>
     </section>
   </main>
+
+  <footer class="wrap footer">
+    <div>© <span id="y"></span> Swiss Smart Living</div>
+    <div class="muted">Mentions légales • Confidentialité</div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
