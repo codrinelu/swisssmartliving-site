@@ -1,1 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Swiss Smart Living — A home that thinks for you</title>
 
+  <meta name="description" content="Swiss Smart Living SA — Smart automation, invisible comfort, total security. Premium Smart Home design & installation in French-speaking Switzerland." />
+  <meta property="og:title" content="Swiss Smart Living — A home that thinks for you" />
+  <meta property="og:description" content="Smart automation, invisible comfort, total security." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header class="wrap header">
+    <a class="brand" href="/en/">
+      <img src="/assets/logo.svg" alt="Swiss Smart Living" class="logo" />
+      <div class="brandText">
+        <div class="name">Swiss Smart Living</div>
+        <div class="tag">Comfort • Security • Energy</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="#benefits">Benefits</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="btn">Request a study</a>
+      <a class="lang" href="/fr/" aria-label="Français">FR</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="top">
+      <div class="heroLeft">
+        <h1>A home that thinks for you.</h1>
+        <p>Smart automation, invisible comfort, total security. We design premium residential systems that anticipate your daily life.</p>
+
+        <div class="cta">
+          <a class="btn" href="#benefits">Discover the benefits</a>
+          <a class="btn ghost" href="#contact">Request a study</a>
+        </div>
+
+        <div class="meta">French-speaking Switzerland • Premium projects</div>
+      </div>
+
+      <div class="heroRight">
+        <div class="card">
+          <div class="cardTitle">What you get</div>
+          <ul>
+            <li>Frictionless daily routines</li>
+            <li>Smart security & monitoring</li>
+            <li>Comfortable, optimized climate</li>
+            <li>Clean, scalable installation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="benefits">
+      <h2>Your day-to-day, upgraded</h2>
+      <p class="muted">We sell experiences, not gadgets.</p>
+
+      <div class="grid2">
+        <div class="box"><div class="kicker">🚪 Seamless arrival</div><p>Door access, lighting and ambiance happen automatically.</p></div>
+        <div class="box"><div class="kicker">🌡 Comfort ahead of time</div><p>Temperature optimized before you arrive, room by room.</p></div>
+        <div class="box"><div class="kicker">💡 Adaptive lighting</div><p>Brightness and warmth adjust to time and activity.</p></div>
+        <div class="box"><div class="kicker">🔐 Active security</div><p>Smart monitoring while you’re away, precise alerts, full control.</p></div>
+        <div class="box"><div class="kicker">🌙 Night mode</div><p>Whole-home off, perimeter secured, sleep-ready comfort.</p></div>
+        <div class="box"><div class="kicker">🌿 Exterior control</div><p>Garden lighting at sunset, elegant ambiance without effort.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap section panel">
+      <h2>Why Swiss Smart Living</h2>
+      <p class="lead">We design the intelligence of your home.</p>
+
+      <div class="grid2">
+        <div class="lineItem">Tailor-made design</div>
+        <div class="lineItem">Clean, technical installation</div>
+        <div class="lineItem">End-to-end integration</div>
+        <div class="lineItem">Scalable systems</div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="process">
+      <h2>Our process</h2>
+      <p class="muted">Precise, no guesswork.</p>
+
+      <ol class="steps">
+        <li><span>1</span> Lifestyle analysis</li>
+        <li><span>2</span> Technical design</li>
+        <li><span>3</span> Premium, invisible installation</li>
+        <li><span>4</span> Commissioning, training & support</li>
+      </ol>
+    </section>
+
+    <section class="wrap section" id="contact">
+      <h2>Personalized Smart Home study</h2>
+      <p class="muted">Describe your project. Reply within 24 business hours.</p>
+
+      <form name="contact-en" method="POST" data-netlify="true" class="form">
+        <input type="hidden" name="form-name" value="contact-en" />
+        <div class="row">
+          <input name="name" placeholder="Name" required />
+          <input name="phone" placeholder="Phone" />
+        </div>
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Tell us about your home, your routines, and what you want to automate…" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <div class="contactLine">
+        <a href="tel:+41794127172">+41 79 412 71 72</a>
+        <span class="dot">•</span>
+        <a href="mailto:codrin@swisssmartliving.ch">codrin@swisssmartliving.ch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div>© <span id="y"></span> Swiss Smart Living SA</div>
+    <div class="muted">French-speaking Switzerland</div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
